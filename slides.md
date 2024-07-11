@@ -64,8 +64,13 @@ Which runs everything, has been around forever and will become your best friend.
 * Control flow
 * Arrays 
 * Methods
+* Static objects/methods
 
 ### Tasks
+ * Run examples details see [here](02-java-intro/Readme.md)
+ * Run each example from your IDE
+ * Debug each example from your IDE
+ * Execute tasks for each example
 
 ---
 # Chapter 03 - Libraries
@@ -95,6 +100,7 @@ Which runs everything, has been around forever and will become your best friend.
 * Collection Framework
 * Working with files
 * Property files
+* Observing JVM doing its thing
 
 ### Tasks
 

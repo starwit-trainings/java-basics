@@ -5,7 +5,7 @@ In this section you will find a number of simple examples, that shall help you, 
 ## Example list
 
 ### Hello World
-No software development lecture can start without a hello word example. So excute the following commands:
+No software development lecture can start without a hello word example. So execute the following commands:
 ```bash
     cd hello-world
     mvn clean package
