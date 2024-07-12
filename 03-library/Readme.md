@@ -3,7 +3,7 @@
 Writing everythin on your own is neither realistic nor advisable. This section will thus provide examples, for how Java code can be structured and how you can use external libraries. For examples we will use the following libraries:
 * Apache Commons https://commons.apache.org/
 
-In the Java eco-system literally millions of libraries are available. To get an idea 
+In the Java eco-system literally millions of libraries are available. To get an idea of many libraries are available browse [Maven Central](https://mvnrepository.com/).
 
 ## Example list
 
