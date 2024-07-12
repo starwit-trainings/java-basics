@@ -65,6 +65,7 @@ Which runs everything, has been around forever and will become your best friend.
 * Arrays 
 * Methods
 * Static objects/methods
+* CLI Parameters
 
 ### Tasks
  * Run examples details see [here](02-java-intro/Readme.md)
