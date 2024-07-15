@@ -13,6 +13,8 @@ import org.apache.commons.csv.CSVRecord;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import de.starwit.entities.ClubEntity;
+
 public class FootballApp {
     static Logger log = LogManager.getLogger(FootballApp.class.getName());
 
@@ -23,6 +25,10 @@ public class FootballApp {
         FootballApp fa = new FootballApp();
         List<ClubEntity> clubs = fa.parseClubs();
         log.info("Number of parsed clubs " + clubs.size());
+
+        fa.parseLeagues();
+        fa.parseGames();
+        fa.parsePlayers();
     }
 
     public List<ClubEntity> parseClubs() {
@@ -56,4 +62,19 @@ public class FootballApp {
         return result;
     }
 
+    private void parseLeagues() {
+        throw new UnsupportedOperationException("Unimplemented method 'parseLeagues'");
+    }    
+
+    private void parsePlayers() {
+        throw new UnsupportedOperationException("Unimplemented method 'parsePlayers'");
+    }
+
+    private void parseGames() {
+        throw new UnsupportedOperationException("Unimplemented method 'parseGames'");
+    }
+
+    private void getLeagueForClub(ClubEntity c) {
+
+    }
 }

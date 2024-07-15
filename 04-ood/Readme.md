@@ -16,3 +16,8 @@ This example introduces a set of classes, representing a football league. Execut
 * Run app
 * create a class definition for all four csv files in folder data
 * parse all of them and create according lists with entries
+* make file location CLI parameters
+* Add SizeInterface to AbstractEntity and implement method in all classes accordingly
+* add Serializable interface to classes - what does that do?
+* implement function, that returns LeagueEntity for given Club - change method signature accordingly
+* Can you think of a better way, to handle this?

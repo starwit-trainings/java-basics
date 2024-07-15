@@ -1,7 +1,7 @@
-package de.starwit;
+package de.starwit.entities;
 
 
-public class AbstractEntity {
+public abstract class AbstractEntity {
     int id;
 
     public int getId() {

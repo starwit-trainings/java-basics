@@ -90,6 +90,7 @@ Which runs everything, has been around forever and will become your best friend.
 * Abstract Classes
 * Interfaces
 * Polymorphy
+* Generics
 
 ### Tasks
 
