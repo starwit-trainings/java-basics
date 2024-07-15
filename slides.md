@@ -82,6 +82,8 @@ Which runs everything, has been around forever and will become your best friend.
 * Example libraries
 
 ### Tasks
+* Run examples details see [here](03-library/Readme.md)
+* implement tasks from Readme
 ---
 # Chapter 04 - Object Oriented Development
 * OOD Concept
@@ -93,18 +95,30 @@ Which runs everything, has been around forever and will become your best friend.
 * Generics
 
 ### Tasks
-
+* Run examples details see [here](04-ood/Readme.md)
+* implement tasks from Readme
 ---
 # Chapter 05 - Advanced Java Concepts
-* Exceptions
-* Unit tests
 * Lambda functions
 * Collection Framework
-* Working with files
+* Exceptions
+* Unit tests
 * Property files
+* Working with files
 * Observing JVM doing its thing
 
 ### Tasks
+* Run examples details see [here](05-advanced-java-concepts/Readme.md)
+* implement tasks from Readme
+---
+
+![width:600px](imgs/Java.util.Collection_hierarchy.svg)
+###### By Ramlmn - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=64043967
+
+---
+
+![width:600px](imgs/Java.util.Map_hierarchy.svg)
+###### By ramlmn - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=64044187
 
 ---
 # Chapter 06 - A larger example
