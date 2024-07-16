@@ -44,6 +44,7 @@ public class FootballApp {
 
     public void parseData() {
         clubs = parseClubs();
+        // add parsing other data here
     }
 
     private List<ClubEntity> parseClubs() {

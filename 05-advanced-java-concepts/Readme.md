@@ -21,6 +21,32 @@ This example introduces Java's collection framework. Execute the following comma
 * Write a method, that extracts prefix from all club names (== split at first white space) and put result in a list of strings
 
 ### Exceptions
+Exceptions are a powerful concept, to deal with things going wrong. And as things always can go wrong, working with exceptions properly is important. To run example, execute the following commands:
+```bash
+    cd exceptions
+    mvn clean package
+    java -jar target/exceptions.jar
+```
+#### Tasks
+* run app and observe output
+* extract parsing data into a separate method and catch Exception, Hint: _NumberFormatException_
+* rename csv file and observe what's happening
+* discuss, what are good strategies for this situation
+
 ### Unit Tests
 ### Property Files
+This example shows you, how to use property files in Java. They are very helpful, to configure Java applications. Execute the following commands:
+```bash
+    cd property-files
+    mvn clean package
+    java -jar target/property-files.jar
+```
+#### Tasks
+* add locations for all data files as a property & take over parsing code from collection example
+* copy files to another location and test if app with adapted config is still working
+* use boolean switch to turn on/off sorting Hint:
+  ```java
+    boolean isSorting = Boolean.parseBoolean(config.getProperty("data.sort"));
+  ```
+
 ### Writing & Reading from Files
