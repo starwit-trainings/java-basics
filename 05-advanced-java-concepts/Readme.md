@@ -34,6 +34,17 @@ Exceptions are a powerful concept, to deal with things going wrong. And as thing
 * discuss, what are good strategies for this situation
 
 ### Unit Tests
+Making sure that everything, that worked yesterday, still works today, unit tests are very helpful. To run example, execute the following commands:
+```bash
+    cd unit-tests
+    mvn clean package
+    java -jar target/unit-tests.jar
+```
+
+#### Tasks
+* run example and try various values for assertions
+* use assertEquals for testSorting - why is this better?
+
 ### Property Files
 This example shows you, how to use property files in Java. They are very helpful, to configure Java applications. Execute the following commands:
 ```bash
