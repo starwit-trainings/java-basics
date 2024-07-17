@@ -127,7 +127,8 @@ Which runs everything, has been around forever and will become your best friend.
 * Implementing functions
 
 ### Tasks
-
+* Run examples details see [here](06-real-example/Readme.md)
+* implement tasks from Readme
 ---
 # Chapter 07 - Outlook
 * HTTP and network concepts
