@@ -61,3 +61,13 @@ This example shows you, how to use property files in Java. They are very helpful
   ```
 
 ### Writing & Reading from Files
+Writing to files is an every day task and here is an example, that shows you, how write to files in Java. Execute the following commands:
+```bash
+    cd files
+    mvn clean package
+    java -jar target/files.jar
+```
+#### Tasks
+* Change output to use ; instead of ,
+* add a header line to produced CSV file.
+
