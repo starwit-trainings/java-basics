@@ -21,3 +21,10 @@ This example introduces a proven library and shows, how to use it. Execute the f
 * Rewrite program, to get both strings as a CLI parameter
 * Rewrite program, to provide CSV file location as a CLI parameter - parameter check shall be in a separate method
 * Use string parameters and check every entry if name is equal to one of the params
+
+### Apache Commons CLI
+This example shall be build by you. As you just learned how to add a library to your software, create a new folder called apachecli and copy content of last example. Rename all necessary fields in pom.xml and add [Apache CLI](https://commons.apache.org/proper/commons-cli/introduction.html) as a dependency. This example shall except the following parameters:
+* -f that holds CSV file location from last example
+* -t that prints time and date
+* -h to print info and parameter help
+ 

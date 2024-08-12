@@ -21,7 +21,8 @@ This example demonstrate some of Java's features, to make decisions and control 
     * call makeDecision with that number - modify method signature
     * call forloops/whileloops methods with input as parameter, use param as loop condition
     * Write a method, that runs a for loop as often as _input_ but breaks if input is divisable by 11 [hint break](https://www.w3schools.com/java/java_break.asp) [hint modulus](https://www.w3schools.com/java/java_operators.asp)
-    * Write a mehtod, that runs a while loop, but dismiss current iteration, if input is divisable by 11
+    * Write a method, that runs a while loop, but dismiss current iteration, if input is divisable by 11
+* Rewrite method readingInput such, that input is returned as a value, if input is a number. Remove log output from that method and move that output to main method.
 
 ### On data types
 Storing data in variables is essential for any programming language. This example provides help, to understand Java's build-in types and how you use them.
@@ -33,10 +34,12 @@ Storing data in variables is essential for any programming language. This exampl
 
 #### Tasks
  * Run app
- * Write a method, that creates StringBuffer output with separating all values
+ * Modify dataTypes/moreDataTypes method, such that StringBuffer output separates values
  * Write a method, that in/decreases all integer types to its respective maximum/minimum
  * Enhance calculating method by all [arithmetic operators](https://www.w3schools.com/java/java_operators.asp)
- * Enhance array method with an array that holds random integers, after that every number in the array shall be increased by 1, except if the value is greater or equal 1000
+ * Enhance array method with an array that holds random integers, after that every number in the array shall be increased by 1, except if the value is greater or equal 1000 [Hint for random numbers](https://www.geeksforgeeks.org/generating-random-numbers-in-java/)
+ * Write a method, that collects more than one input, checks if input is an integer and put all integers into an array. After completion - how do you know? - array shall be printed (see method multiple things)
+ * Can you implement output from last task, using a while loop?
 
 ### Parameters and Methods
 In order to break down software into manageable pieces, handing over parameters is essential. This example project shows you, how to do this on program start and with methods.
