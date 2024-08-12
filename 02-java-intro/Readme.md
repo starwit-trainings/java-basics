@@ -16,8 +16,12 @@ This example demonstrate some of Java's features, to make decisions and control 
  * Run app and test with various inputs
  * add a switch case to input method, selecting numbers 1,2,3
  * write four methods one for each above switch cases and one for default
- * modify the method for three that outputs 10 times a message
- * 
+ * modify the method for case three that outputs 10 times a message
+ * If input is a number
+    * call makeDecision with that number - modify method signature
+    * call forloops/whileloops methods with input as parameter, use param as loop condition
+    * Write a method, that runs a for loop as often as _input_ but breaks if input is divisable by 11 [hint break](https://www.w3schools.com/java/java_break.asp) [hint modulus](https://www.w3schools.com/java/java_operators.asp)
+    * Write a mehtod, that runs a while loop, but dismiss current iteration, if input is divisable by 11
 
 ### On data types
 Storing data in variables is essential for any programming language. This example provides help, to understand Java's build-in types and how you use them.
