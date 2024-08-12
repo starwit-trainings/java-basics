@@ -55,3 +55,4 @@ In order to break down software into manageable pieces, handing over parameters 
  * Write a method, that checks for every parameter if it is a string or integer
  * Put all integer params in an array, write a method that takes this array as input and results sum of all elements
  * move all static methods to FirstClass definition and call them from there
+ * write a method that takes first parameter and switch cases over values 1 - 10 calling a method for each case
