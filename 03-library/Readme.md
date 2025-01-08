@@ -1,14 +1,17 @@
 # Introduction to Java libraries
 
-Writing everythin on your own is neither realistic nor advisable. This section will thus provide examples, for how Java code can be structured and how you can use external libraries. For examples we will use the following libraries:
-* Apache Commons https://commons.apache.org/
+Writing everything on your own is neither realistic nor advisable. Maturity is a very important attribute of code - the more a piece of code is used, the more it is tested.
 
-In the Java eco-system literally millions of libraries are available. To get an idea of many libraries are available browse [Maven Central](https://mvnrepository.com/).
+This section will thus provide examples, for how Java code can be structured and how you can use external libraries. In order to manage those libraries (aka dependencies), Maven as a tool is introduced. 
+
+In the Java eco-system literally millions of libraries are available. To get an idea of many libraries are available browse [Maven Central](https://mvnrepository.com/). 
 
 ## Example list
 
 ### Apache Commons Example
-This example introduces a proven library and shows, how to use it. Execute the following commands:
+This example introduces the Apache commons collection of libraries and shows, how to use it. Check out this vast lib collection here https://commons.apache.org/
+
+To run example, execute the following commands:
 ```bash
     cd commons
     mvn clean package
@@ -27,4 +30,31 @@ This example shall be build by you. As you just learned how to add a library to 
 * -f that holds CSV file location from last example
 * -t that prints time and date
 * -h to print info and parameter help
+
+#### Tasks
+* create a new project, you can let Maven help you:
+    ```java
+        mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes 
+        -DarchetypeArtifactId=maven-archetype-quickstart 
+        -DarchetypeVersion=1.5 
+        -DjavaCompilerVersion=21
+    ```
+* Add commons CLI as a dependency
+
+### Maven Introduction
+Maven is a tool to manage dependencies and to define build/release processes. It is a proven and quite powerful tool. No software project should be build without a tool like Maven. This example will introduce you to some (basic) features of Maven.
+
+So far you have "just" used Maven. Now it is time, to dive into some details.
+To run example, execute the following commands:
+```bash
+    cd maven-example
+    mvn package
+    java -jar target/maven.jar
+```
+
+#### Tasks
+* Run example with phases: compile, test, package, install
+* Observe results in target folder, check also content HOME_DIR/.m2
+* Make sure you understand executable jar process - change name of resulting filename
+* One thing Maven is great, is to track software bill of materials - add [CycloneDX plugin](https://github.com/CycloneDX/cyclonedx-maven-plugin) and execute it
  
