@@ -1,0 +1,35 @@
+name: database-example
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: football
+      POSTGRES_USER: football
+      POSTGRES_PASSWORD: super-secret
+      PGDATA: /var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U football']
+      interval: 5s
+      timeout: 60s
+      retries: 30
+    volumes:
+      - db:/var/lib/postgresql/data
+      - ./structures.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5433:5432"
+  
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+       - pgadmin:/var/lib/pgadmin
+    ports:
+      - "5050:80"
+
+volumes:
+  db:
+  pgadmin:
