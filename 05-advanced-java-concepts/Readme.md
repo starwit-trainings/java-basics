@@ -20,6 +20,21 @@ This example introduces Java's collection framework. Execute the following comma
 * Write a method, that searches for "SV", "SC" and "FC" and counts how often club names start with that prefix
 * Write a method, that extracts prefix from all club names (== split at first white space) and put result in a list of strings
 
+### Lambda Functions
+Lambdas are a leight weight version of Java methods. They are very handy when doing stuff in large data structures. Usually lambda functions implement only short code blocks. However their syntax can be challenging. So this example provides guidance on how to use them.
+```bash
+    cd lambda
+    mvn clean package
+    java -jar target/lambda.jar
+```
+
+#### Tasks
+* Run example and make sure you understand everything
+* Let's see if you understood lambdas:
+  * Create a functional interface with a function that takes an integer as argument
+  * Create two implementations true if divisible by three, compute exponential of base 2
+  * use both functions in a forEach loop on integer array
+
 ### Exceptions
 Exceptions are a powerful concept, to deal with things going wrong. And as things always can go wrong, working with exceptions properly is important. To run example, execute the following commands:
 ```bash
@@ -27,6 +42,7 @@ Exceptions are a powerful concept, to deal with things going wrong. And as thing
     mvn clean package
     java -jar target/exceptions.jar
 ```
+
 #### Tasks
 * run app and observe output
 * extract parsing data into a separate method and catch Exception, Hint: _NumberFormatException_
