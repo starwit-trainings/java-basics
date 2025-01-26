@@ -35,6 +35,21 @@ Lambdas are a leight weight version of Java methods. They are very handy when do
   * Create two implementations true if divisible by three, compute exponential of base 2
   * use both functions in a forEach loop on integer array
 
+### Generics
+Generics are a very powerful extension of Java object system. In fact without generics it is hard to make use of any library in Java. So this example shows you how to use Generics to write code for a league system, that can be used for any kind of sport.
+
+```bash
+    cd generics
+    mvn clean package
+    java -jar target/generics.jar
+```
+
+#### Tasks
+* Run example
+* Add attributes to football club and league entity. Extend league report
+* Add player and game entity - any idea how we further generalize code?
+* Now let's create a complete different league of chess playing clubs
+
 ### Exceptions
 Exceptions are a powerful concept, to deal with things going wrong. And as things always can go wrong, working with exceptions properly is important. To run example, execute the following commands:
 ```bash
