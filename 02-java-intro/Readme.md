@@ -46,6 +46,7 @@ This example has examples for the following language features:
 * [Type conversions](https://www.w3schools.com/java/java_type_casting.asp) How to convert types and which rules are applied implicitly
 * [Operators](https://www.w3schools.com/java/java_operators.asp) 
 * [Arrays](https://www.w3schools.com/java/java_arrays.asp) which allows you, to store multiple things of the same type
+* [Scopes](https://www.w3schools.com/java/java_scope.asp) How scopes define, where variables can be used and where not.
 
 __Please note__ As Java is an object oriented programming language, it's type system can be extended and it is in fact the much more interesting part of the language :)
 

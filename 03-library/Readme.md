@@ -18,6 +18,13 @@ To run example, execute the following commands:
     java -jar target/commons.jar
 ```
 
+#### Concepts covered
+This example has examples for the following language features:
+* [Java packages](https://www.w3schools.com/java/java_packages.asp) How to manage larger blocks of code and how to address objects in libraries
+* How to work with libraries, that are downloaded via dependency management
+* [Javadoc](https://en.wikipedia.org/wiki/Javadoc) how to use Java's documentation system
+* [Working with Strings](https://www.w3schools.com/java/java_strings.asp) More tricks to work with strings in Java
+
 #### Tasks
 * Browse JavaDoc: https://commons.apache.org/proper/commons-text/apidocs/index.html
 * Play with the two strings and try various combinations
