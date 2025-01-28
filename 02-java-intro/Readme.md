@@ -1,6 +1,6 @@
 # Introduction to Java
 
-In this section you will find a number of simple examples, that will introduce the Java programming language.
+In this section you will find a number of simple examples, that will introduce the Java programming language. Goal is to cover the most basic features and help you, to start developing your own software as quickly as possible.
 
 ## Example list
 
@@ -11,6 +11,15 @@ This example demonstrate some of Java's features, to make decisions and control 
     mvn clean package
     java -jar target/control.jar
 ```
+
+#### Concepts covered
+This example has examples for the following language features:
+* [if/else](https://www.w3schools.com/java/java_conditions.asp) -> based on variables or expressions, your program can decide different ways to act
+* [switch/case](https://www.w3schools.com/java/java_switch.asp) -> if you have a multitude of possible choises, based on the value of a variable, this helps you defining them in an easy to understand way.
+* loops
+  * [for](https://www.w3schools.com/java/java_for_loop.asp) -> classic program loop to run from start value (e.g 0) to an end value (like length of an array)
+  * [for(each)](https://www.w3schools.com/java/java_foreach_loop.asp) -> Java's way of looping over every element in arrays/collections/...
+  * [while](https://www.w3schools.com/java/java_while_loop.asp) -> Run a loop for as long a value/expression is true
 
 #### Tasks
  * Run app and test with various inputs
@@ -31,6 +40,14 @@ Storing data in variables is essential for any programming language. This exampl
     mvn clean package
     java -jar target/data.jar
 ```
+#### Concepts covered
+This example has examples for the following language features:
+* [Java's (primitive) datatypes](https://www.w3schools.com/java/java_data_types.asp)
+* [Type conversions](https://www.w3schools.com/java/java_type_casting.asp) How to convert types and which rules are applied implicitly
+* [Operators](https://www.w3schools.com/java/java_operators.asp) 
+* [Arrays](https://www.w3schools.com/java/java_arrays.asp) which allows you, to store multiple things of the same type
+
+__Please note__ As Java is an object oriented programming language, it's type system can be extended and it is in fact the much more interesting part of the language :)
 
 #### Tasks
  * Run app
@@ -49,10 +66,18 @@ In order to break down software into manageable pieces, handing over parameters 
     java -jar target/params.jar param1 9 param3
 ```
 
+#### Concepts covered
+This example has examples for the following language features:
+* [Java methods](https://www.w3schools.com/java/java_methods.asp) Java's core concept to break code into manageable blocks
+* [Parameters in Methods](https://www.w3schools.com/java/java_methods_param.asp) How to deal with parameters for methods.
+* [Overloading Methods](https://www.w3schools.com/java/java_methods_overloading.asp) On the magic, that multiple methods can have the same name and yet do something different.
+
 #### Tasks
  * Run app with various parameters
  * output number of handed over parameters
  * Write a method, that checks for every parameter if it is a string or integer
  * Put all integer params in an array, write a method that takes this array as input and results sum of all elements
+ * write a method that takes first parameter and switch cases over values calling a method for each case. Choose how many cases you want to distinguish
+ * Look at method _returnParameterExample_, create two other methods with the same name. On shall take _double_ and the other _int_ as input parameters. Both shall return the sum of it's two parameters
  * move all static methods to FirstClass definition and call them from there
- * write a method that takes first parameter and switch cases over values 1 - 10 calling a method for each case
+ * __Bonus challenge__: If first parameter is an integer, this shall be taken as an input for a method, that asks for as many user inputs as the integer's value. All input values shall be stored in an array. Inform user on how many items are still necessary to input.
