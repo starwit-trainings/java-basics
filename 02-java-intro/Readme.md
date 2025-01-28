@@ -25,7 +25,7 @@ This example demonstrate some of Java's features, to make decisions and control 
 * Rewrite method readingInput such, that input is returned as a value, if input is a number. Remove log output from that method and move that output to main method.
 
 ### On data types
-Storing data in variables is essential for any programming language. This example provides help, to understand Java's build-in types and how you use them.
+Storing data in variables is essential for any programming language. This example provides help, to understand Java's build-in types and how you use them. [Here](https://www.w3schools.com/java/java_data_types.asp) is an overview of primitive types.
 ```bash
     cd data
     mvn clean package
