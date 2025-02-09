@@ -1,6 +1,9 @@
 # Tutorial Java basics
 In this repository you will find a lecture to learn the Java programming language. 
 
+## Setup & Tools
+In order to walk through examples, you'll need some pre-requisits on your computer. Follow steps in [this section](PrepareYourComputer.md), to prepare your computer.
+
 ## Repo structure
 
 Lecture is divided in a number of sections and each section has a readme file with explanations and tasks. There is also an introduction [slide deck](slides.md) which is using Marp to generate slides.
