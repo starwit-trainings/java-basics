@@ -12,10 +12,19 @@ This example introduces Java's collection framework. Execute the following comma
     java -jar target/collection.jar
 ```
 
+#### Concepts covered
+Saving data in sets, lists or maps are everyday tasks when developing software. Java thus offers implementations of the most important data structures. See the following introductions to understand, how they work
+
+* [Lists](https://www.geeksforgeeks.org/list-interface-java-examples/)
+* [Maps](https://www.geeksforgeeks.org/map-interface-java-examples/)
+* [Sets](https://www.geeksforgeeks.org/set-in-java/)
+
+__Note:__ The Java Collection contains a lot more data structures. See [here](https://www.geeksforgeeks.org/collections-in-java-2/) for a complete list and [here](https://en.wikipedia.org/wiki/Java_collections_framework) for a diagram containing class relations.
+
 #### Tasks
 * Adapt implementation such, that getting size of club list works always. Hint: empty lists and constructors
 * Discussion: Are lists a good basis, to sort entries? Which problems, do you see?
-* Take your parsing impl from last chapter and crete sorted output for all lists
+* Take your parsing impl from [last chapter](../04-ood/Readme.md) and crete sorted output for all lists
 * Look at countClubsPerLeague method - can you implement same functionality using an array?
 * Write a method, that searches for "SV", "SC" and "FC" and counts how often club names start with that prefix
 * Write a method, that extracts prefix from all club names (== split at first white space) and put result in a list of strings
@@ -27,6 +36,9 @@ Lambdas are a leight weight version of Java methods. They are very handy when do
     mvn clean package
     java -jar target/lambda.jar
 ```
+
+#### Concepts covered
+An introduction to Lambda functions can be found [here](https://www.w3schools.com/java/java_lambda.asp).
 
 #### Tasks
 * Run example and make sure you understand everything
@@ -44,6 +56,9 @@ Generics are a very powerful extension of Java object system. In fact without ge
     java -jar target/generics.jar
 ```
 
+#### Concepts covered
+[Generics](https://en.wikipedia.org/wiki/Generics_in_Java) are an essential part of Java's class/object system. See [OOD section](../04-ood/Readme.md) and list example above, to understand, how generics blend in.
+
 #### Tasks
 * Run example
 * Add attributes to football club and league entity. Extend league report
@@ -57,6 +72,9 @@ Exceptions are a powerful concept, to deal with things going wrong. And as thing
     mvn clean package
     java -jar target/exceptions.jar
 ```
+
+#### Concepts covered
+An overview of Java's concept for exceptions can be found [here](https://www.w3schools.com/java/java_try_catch.asp).
 
 #### Tasks
 * run app and observe output
@@ -72,6 +90,11 @@ Making sure that everything, that worked yesterday, still works today, unit test
     java -jar target/unit-tests.jar
 ```
 
+#### Concepts covered
+* A general introduction to unit tests can be found at [Wikipedia](https://en.wikipedia.org/wiki/Unit_testing). 
+* See [here](https://www.atlassian.com/continuous-delivery/software-testing/code-coverage) how coverage of your code by unit tests is taken care of.
+* Framework used for this example is [jUnit](https://junit.org/junit5/).
+
 #### Tasks
 * run example and try various values for assertions
 * use assertEquals for testSorting - why is this better?
@@ -83,6 +106,10 @@ This example shows you, how to use property files in Java. They are very helpful
     mvn clean package
     java -jar target/property-files.jar
 ```
+
+#### Concepts covered
+Though a simple concept, make sure, you understand the [concept](https://en.wikipedia.org/wiki/.properties) of property files.
+
 #### Tasks
 * add locations for all data files as a property & take over parsing code from collection example
 * copy files to another location and test if app with adapted config is still working
@@ -98,6 +125,11 @@ Writing to files is an every day task and here is an example, that shows you, ho
     mvn clean package
     java -jar target/files.jar
 ```
+
+#### Concepts covered
+* Basic file operations at [W3Schools](https://www.w3schools.com/java/java_files.asp).
+* It is a good idea, to review the idea of [abstraction](https://www.w3schools.com/java/java_abstract.asp).
+
 #### Tasks
 * Change output to use ; instead of ,
 * add a header line to produced CSV file.

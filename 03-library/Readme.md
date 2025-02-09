@@ -32,6 +32,31 @@ This example has examples for the following language features:
 * Rewrite program, to provide CSV file location as a CLI parameter - parameter check shall be in a separate method
 * Use string parameters and check every entry if name is equal to one of the params
 
+### Maven Introduction
+Maven is a tool to manage dependencies and to define build/release processes. It is a proven and quite powerful tool. No software project should be build without a tool like Maven. This example will introduce you to some (basic) features of Maven.
+
+So far you have "just" used Maven. Now it is time, to dive into some details.
+To run example, execute the following commands:
+```bash
+    cd maven-example
+    mvn package
+    java -jar target/maven.jar
+```
+
+#### Concepts covered
+Packaging software is about managing complexity and it covers the following concepts:
+* [Dependency Management](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)
+* [Build Management](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
+* [Continuously building software](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
+
+#### Tasks
+* Run example with phases: compile, test, package, install
+* Observe results in target folder, check also content HOME_DIR/.m2
+* Make sure you understand executable jar process - change name of resulting filename
+* Add [log4j](https://central.sonatype.com/artifact/log4j/log4j) to your dependencies and change all output to log messages. See [here](commons/src/main/java/de/starwit/CommonsApp.java) for an example.
+* Add a second Java source file containing a class with one method, that prints current [date and time](https://www.w3schools.com/java/java_date.asp). Call this method from main method.
+* One thing Maven is great, is to track software bill of materials - add [CycloneDX plugin](https://github.com/CycloneDX/cyclonedx-maven-plugin) and execute it
+
 ### Apache Commons CLI
 This example shall be build by you. As you just learned how to add a library to your software, create a new folder called apachecli and copy content of last example. Rename all necessary fields in pom.xml and add [Apache CLI](https://commons.apache.org/proper/commons-cli/introduction.html) as a dependency. This example shall except the following parameters:
 * -f that holds CSV file location from last example
@@ -47,21 +72,7 @@ This example shall be build by you. As you just learned how to add a library to 
         -DjavaCompilerVersion=21
     ```
 * Add commons CLI as a dependency
+* Implement parameter handover
+* __Bonus challenge:__ Take CSV reading code from first example in this chapter and let it run, if -f parameter is set.
 
-### Maven Introduction
-Maven is a tool to manage dependencies and to define build/release processes. It is a proven and quite powerful tool. No software project should be build without a tool like Maven. This example will introduce you to some (basic) features of Maven.
-
-So far you have "just" used Maven. Now it is time, to dive into some details.
-To run example, execute the following commands:
-```bash
-    cd maven-example
-    mvn package
-    java -jar target/maven.jar
-```
-
-#### Tasks
-* Run example with phases: compile, test, package, install
-* Observe results in target folder, check also content HOME_DIR/.m2
-* Make sure you understand executable jar process - change name of resulting filename
-* One thing Maven is great, is to track software bill of materials - add [CycloneDX plugin](https://github.com/CycloneDX/cyclonedx-maven-plugin) and execute it
  

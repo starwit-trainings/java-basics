@@ -16,6 +16,10 @@
     <maven.compiler.release>21</maven.compiler.release>
   </properties>
 
+  <!-- 
+    Add Dependencies for your applications here. Deps added here
+    can be used in all submodules.
+  -->
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -28,6 +32,7 @@
     </dependencies>
   </dependencyManagement>
 
+  <!-- Dependencies for this module, also note scope -->
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -42,6 +47,7 @@
     </dependency>
   </dependencies>
 
+  <!-- Here you can define plugins, that shall run in your build -->
   <build>
     <plugins>
       <plugin>
@@ -54,7 +60,7 @@
               <goal>single</goal>
             </goals>
             <configuration>
-              <finalName>maven-example</finalName>
+              <finalName>maven</finalName>
               <archive>
                 <manifest>
                   <mainClass>

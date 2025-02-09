@@ -10,6 +10,8 @@ Neccessary:
 
 Recommended
 * Java Mission Control - Observe the Java virtual machine
+* Docker - Build and run containers
+* NodeJS/NPM - Build and package Javascript applications (used for web frontends)
 
 
 ## Downloading Software
