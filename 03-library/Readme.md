@@ -48,6 +48,7 @@ Packaging software is about managing complexity and it covers the following conc
 * [Dependency Management](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)
 * [Build Management](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
 * [Continuously building software](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
+* [Log4J](https://howtodoinjava.com/log4j2/useful-conversion-pattern-examples/) - output of your application that is meant, to understand it's state, should be done with a logging framework.
 
 #### Tasks
 * Run example with phases: compile, test, package, install
