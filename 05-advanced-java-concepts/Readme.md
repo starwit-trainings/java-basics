@@ -27,7 +27,7 @@ __Note:__ The Java Collection contains a lot more data structures. See [here](ht
 * Take your parsing impl from [last chapter](../04-ood/Readme.md) and crete sorted output for all lists
 * Look at countClubsPerLeague method - can you implement same functionality using an array?
 * Write a method, that searches for "SV", "SC" and "FC" and counts how often club names start with that prefix
-* Write a method, that extracts prefix from all club names (== split at first white space) and put result in a list of strings
+* Write a method, that extracts prefix from all club names (== [split](https://www.w3schools.com/java/ref_string_split.asp) at first white space) and put result in a list of strings
 
 ### Lambda Functions
 Lambdas are a leight weight version of Java methods. They are very handy when doing stuff in large data structures. Usually lambda functions implement only short code blocks. However their syntax can be challenging. So this example provides guidance on how to use them.
