@@ -98,6 +98,7 @@ Making sure that everything, that worked yesterday, still works today, unit test
 #### Tasks
 * run example and try various values for assertions
 * use assertEquals for testSorting - why is this better?
+* Copy CSV files from [chapter 04](../04-ood/football/) into this project. Create short extracts from every file and create a unit test, that tries to parse those extracts. Load files as [classpath resources](https://www.geeksforgeeks.org/loading-resources-from-classpath-in-java-with-example/).
 
 ### Property Files
 This example shows you, how to use property files in Java. They are very helpful, to configure Java applications. Execute the following commands:
