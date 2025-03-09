@@ -3,6 +3,7 @@ package de.starwit;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import java.time.DayOfWeek;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,5 +68,27 @@ public class AppTest {
         assertEquals(38l, size); // no sorting here
         size = fa.getClubs().get(2).countBytes();
         assertEquals(37l, size);                
+    }
+
+    @Test
+    public void testComputeSeason() {
+        int matchdays = 3;
+        var util = new LeagueUtilities();
+        var season = util.computeSeason(matchdays);
+        assertEquals(9, season.size());
+
+        for (int i = 0; i < season.size(); i++) {
+            if(i % 3 == 0) {
+                assertEquals(season.get(i).getDayOfWeek().getValue(), DayOfWeek.FRIDAY.getValue());
+            }
+            if(i % 3 == 1) {
+                assertEquals(season.get(i).getDayOfWeek().getValue(), DayOfWeek.SATURDAY.getValue());
+            }
+            if(i % 3 == 2) {
+                assertEquals(season.get(i).getDayOfWeek().getValue(), DayOfWeek.SUNDAY.getValue());
+            }
+        }
+        
+        assertEquals(season.get(0).getDayOfWeek().getValue(), DayOfWeek.FRIDAY.getValue());
     }
 }
