@@ -208,6 +208,46 @@ By Michelle Ridomi - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/ind
 
 ---
 
+# 1. Introduction to Java
+
+## Java Development Kit
+
+**javac** - read Java class and interface definitions and compile them into bytecode and class files
+
+**java** - launch a Java application
+
+**jar** - creates an archive for classes and resources, and can manipulate or restore individual classes or resources from an archive. The jar command is a general-purpose archiving and compression tool, based on the ZIP and ZLIB compression formats.
+
+---
+
+# 1. Introduction to Java
+
+## Java Development Kit Example
+
+Root folder: ```hello-world```
+Compile in bytecode:
+
+```bash
+mkdir classes
+javac src/main/java/de/starwit/Quiz.java -d classes
+```
+
+Execute Java program:
+
+```bash
+java src/main/java/de/starwit/Quiz.java
+cd classes
+java de.starwit.Quiz
+```
+
+Create and execute archive:
+
+```bash
+jar --create --file foo.jar --main-class de.starwit.Quiz -C classes .
+java -jar foo.jar
+```
+
+---
 
 # 1. Introduction to Java
 
@@ -248,9 +288,11 @@ Source: https://en.wikipedia.org/wiki/List_of_JVM_languages
 ![h:500](../imgs/git-branches.png)
 
 ---
+
 # 1. Introduction to Java
 
 ## Git Pull Requests / Merge Requests
+
 * to merge feature branches in the main branch, pull request or merge requests can be created
 * a pull request can be reviewed and approved before merging
 

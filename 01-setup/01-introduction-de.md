@@ -204,6 +204,44 @@ Quelle: [IBM JVM vs. JRE vs. JDK](https://www.ibm.com/think/topics/jvm-vs-jre-vs
 By Michelle Ridomi - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=35963523
 
 ---
+# 1. Einführung in Java
+
+## Java Development Kit
+
+- **javac** – Liest Java-Klassen- und Schnittstellendefinitionen und kompiliert sie in Bytecode und Klassendateien.  
+- **java** – Startet eine Java-Anwendung.  
+- **jar** – Erstellt ein Archiv für Klassen und Ressourcen und kann einzelne Klassen oder Ressourcen aus einem Archiv manipulieren oder wiederherstellen.  
+  Der `jar`-Befehl ist ein universelles Archivierungs- und Komprimierungswerkzeug, das auf den ZIP- und ZLIB-Komprimierungsformaten basiert.  
+
+---
+
+## Beispiel für das Java Development Kit
+
+Verzeichnis: `hello-world`  
+
+Java-Code in Bytecode kompilieren:
+
+```bash
+mkdir classes
+javac src/main/java/de/starwit/Quiz.java -d classes
+```
+
+Java-Programm ausführen:
+
+```bash
+java src/main/java/de/starwit/Quiz.java
+cd classes
+java de.starwit.Quiz
+```
+
+JAR-Archiv erstellen und ausführen:
+
+```bash
+jar --create --file foo.jar --main-class de.starwit.Quiz -C classes .
+java -jar foo.jar
+```
+
+---
 
 # 1. Einführung in Java
 
