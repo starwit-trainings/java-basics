@@ -42,7 +42,9 @@ This section contains an introduction into the Java programming language. Next t
 * Intermediary code
 * Three decades of optimization
 * OpenJDK & Java's release cycle
+
 ---
+
 ## The Java virtual machine
 Which runs everything, has been around forever and will become your best friend.
 ![width:700px](imgs/JvmSpec7.png)
