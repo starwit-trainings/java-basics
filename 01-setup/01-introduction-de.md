@@ -2,7 +2,7 @@
 marp: true
 paginate: true
 theme: default 
-header: ![h:35](../imgs/cegos-integrata.png)
+header: ![h:80](../imgs/cegos-integrata.png)
 footer: 'Cegos Integrata | Java Basics | 1. Tools, Setup'
 ---
 
@@ -194,6 +194,16 @@ Verschiedene Plattformen für unterschiedliche Gerätetypen und Anwendungsbereic
 Quelle: [IBM JVM vs. JRE vs. JDK](https://www.ibm.com/think/topics/jvm-vs-jre-vs-jdk)
 
 ---
+<!-- _class: image -->
+# 1. Introduction to Java
+
+## Java virtual machine - run everywhere
+
+![width:800px](../imgs/JvmSpec7.png)
+
+By Michelle Ridomi - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=35963523
+
+---
 
 # 1. Einführung in Java
 
@@ -226,6 +236,7 @@ Quelle: [Liste der JVM-Sprachen](https://en.wikipedia.org/wiki/List_of_JVM_langu
 
 ---
 
+<!-- _class: image -->
 # 1. Einführung in Java
 
 ## Git Branches und Workflow
@@ -283,5 +294,5 @@ Quelle: [Liste der JVM-Sprachen](https://en.wikipedia.org/wiki/List_of_JVM_langu
 
 <!-- _class: image -->
 # 1. Einführung in Java
-
+## weitere Aufgaben befinden sich in der [readme](Readme.md)
 ![width:300px](../imgs/duke.png)

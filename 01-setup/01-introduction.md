@@ -2,7 +2,7 @@
 marp: true
 paginate: true
 theme: default 
-header: ![h:35](../imgs/cegos-integrata.png)
+header: ![h:80](../imgs/cegos-integrata.png)
 footer: 'Cegos Integrata | Java Basics | 1. Tools, Setup'
 ---
 
@@ -116,9 +116,9 @@ Run first Programm: Hello World!
 
 ## Motivation
 
-* Nenne Unterschiede zwischen einen Programm und einen Betriebssystem
-* Für welche Anwendungsfälle würdet ihr Java benutzen?
-* Welche Programmiersprachen kennt ihr?
+* describe differences between a program and an operating system.  
+* For which use cases would you use Java?  
+* Which programming languages do you know?
 
 ---
 
@@ -292,16 +292,10 @@ Source: https://en.wikipedia.org/wiki/List_of_JVM_languages
 * When and why should you use git?  
 * What is the difference between debugging and running a java program?  
 
-* Aus welchen Teilen besteht die Java-Plattform?
-* Was ist der Unterschied zwischen einen Interpreter und Compiler? Wo wird in Java was genutzt?
-* Aus welchen Dateien besteht ein Java-Projekt?
-* Auf welchen Prinzipien basiert Java?
-* Warum lässt sich mit Java geschriebener Code einfacher auf andere Systeme (Mikroprozessoren/Betriebssysteme) übertragen?
-* Wann und warum sollte man git benutzen?
-* Was ist der Unterschied zwischen Debuggen und Ausführen?
-
 ---
 <!-- _class: image -->
 # 1. Introduction to Java
+
+## see [readme](Readme.md) for tasks
 
 ![width:300px](../imgs/duke.png)
