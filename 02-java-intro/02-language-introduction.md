@@ -71,7 +71,7 @@ a:hover {
 
 </style>
 <!-- _class: lead -->
-## 2. Language Introduction
+# 2. Language Introduction
 
 ---
 # Agenda
@@ -88,24 +88,29 @@ a:hover {
 * Documentation
 
 ---
-# Language Introduction
-## Variables
-* A variable:
-    * holds a value
-    * has a data type
-    * is created in a declaration statement
-* coding convention for naming: 
-    * starting with lower case
-    * using camel case
+# 2. Language Introduction
 
+## Variables
+
+* A variable:
+  * holds a value
+  * has a data type
+  * is created in a declaration statement
+* coding convention for naming:
+  * starting with lower case
+  * using camel case
 
 ---
-# Language Introduction
+
+# 2. Language Introduction
+
 ## Variables - Data Types
-Define 
-* Size and location in memory
-* Data range
-* Valid operators
+
+* String - stores text, such as "Hello". String values are surrounded by double quotes
+* int - stores integers (whole numbers), without decimals, such as 123 or -123
+* float - stores floating point numbers, with decimals, such as 19.99 or -19.99
+* char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+* boolean - stores values with two states: true or false
 
 of/for a variable
 

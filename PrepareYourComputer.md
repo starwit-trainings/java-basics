@@ -5,14 +5,14 @@ Neccessary:
 
 * openJDK - Java Compiler
 * Maven - Build & Dependency Management
-* Visual Studio Code - Write & edit source code
+* IDE like Visual Studio Code - Write & edit source code
 * git - Source code versioning
 
 Recommended
+
 * Java Mission Control - Observe the Java virtual machine
 * Docker - Build and run containers
 * NodeJS/NPM - Build and package Javascript applications (used for web frontends)
-
 
 ## Downloading Software
 For each tool, you can download installation packages.

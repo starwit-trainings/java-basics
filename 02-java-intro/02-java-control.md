@@ -88,37 +88,199 @@ a:hover {
 <!-- _class: lead -->
 # Java Basics
 
-![width:400px](../imgs/java.jpg)
+![width:400px](../imgs/java2.jpg)
 
-### 1. Introduction
+### 2. Language Introduction
 
 ---
 
-# 1. Introduction to Java
+# 2. Language Introduction
+
 ## Agenda  
 
-* Motivation
-* Java-Powered Applications
-* Java History
-* Principles
-* Java Platform
-* JVM, JRE, JDK
-* IDE & Links
-* Quiz
-
-## Task
-
-Run first Programm: Hello World!
+* Variables, Data Types & Constants
+* Control Flow
+  * code block
+  * condition
+  * loops
+  * switch
+* Arrays
+* Operators
+* Methods
+* Documentation
 
 ---
 
-# 1. Introduction to Java
+# 2. Language Introduction
+
+## Variables
+
+* A variable:
+  * holds a value
+  * has a data type
+  * is created in a declaration statement
+* coding convention for naming:
+  * starting with lower case
+  * using camel case
+
+---
+
+# 2. Language Introduction
 
 ## Motivation
 
 * describe differences between a program and an operating system.  
 * For which use cases would you use Java?  
 * Which programming languages do you know?
+
+---
+
+# 2. Language Introduction
+
+## Variables - Primitive Data Types
+
+```bash
+type variableName = value;
+```
+
+* **byte** whole numbers from -128 to 127
+* **short** whole numbers from -32,768 to 32,767
+* **int** whole numbers from -2,147,483,648 to 2,147,483,647
+* **long** whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+* **float** floating point numbers. Sufficient for storing 6 to 7 decimal digits
+* **double** floating point numbers. Sufficient for storing 15 to 16 decimal digits
+* **boolean** true or false values
+* **char** a single character/letter or ASCII values
+
+---
+
+# 2. Language Introduction
+
+## Variables - Non-primitive pre-defined data types
+
+* **String** stores text
+* **BigDecimal** stores decimal numbers with a defined precision
+* **BigInteger**
+
+## Examples
+
+```bash
+int myNum = 5;               // Integer (whole number)
+float myFloatNum = 5.99f;    // Floating point number
+char myLetter = 'D';         // Character
+boolean myBool = true;       // Boolean
+String myText = "Hello";     // String
+
+String x = "10";
+int y = 20;
+String z = x + y;  // z will be 1020 (a String)
+```
+
+---
+
+# 2. Language Introduction
+
+## Operators
+
+https://www.w3schools.com/java/java_operators.asp
+
+## Arithmetic Operators
+
+* `+` Addition: Adds together two values x + y
+* `-` Subtraction: Subtracts one value from another x - y
+* `*` Multiplication: Multiplies two values x * y
+* `/` Division: Divides one value by another x / y
+* `%` Modulus: Returns the division remainder x % y
+* `++` Increment: Increases the value of a variable by 1 ++x
+* `--` Decrement: Decreases the value of a variable by 1 --x
+
+---
+
+# 2. Language Introduction
+
+## Assignment Operators
+
+| Operator | Example | Same as |
+|---|---|---|
+| = | x = 5 | x = 5 |
+| += | x += 3 | x = x + 3 |
+| -= | x -= 3 | x = x - 3 |
+| *= | x *= 3 | x = x * 3 |
+| /= | x /= 3 | x = x / 3 |
+| %= | x %= 3 | x = x % 3 |
+| &= | x &= 3 | x = x & 3 |
+| ... | ... | ... |
+
+---
+
+# 2. Language Introduction
+
+## Comparision Operators
+
+| Operator | Example | Same as |
+|---|---|---|
+| == | Equal to | x == y |
+| != | Not equal | x != y |
+| > | Greater than | x > y |
+| < | Less than | x < y |
+| >= | Greater than or equal to | x >= y |
+| <= | Less than or equal to | x <= y |
+
+---
+
+# 2. Language Introduction
+
+## Logical Operators
+
+* **&&** Logical and Returns true if both statements are true `x < 5 &&  x < 10`
+* **||** Logical or	Returns true if one of the statements is true `x < 5 || x < 4`
+* **!** Logical not	Reverse the result, returns false if the result is true `!(x < 5 && x < 10)`
+
+---
+
+# 2. Language Introduction
+
+see https://www.w3schools.com/java/java_conditions.asp
+
+condition
+
+```bash
+if (condition1) {
+  // block of code to be executed if condition1 is true
+} else if (condition2) {
+  // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  // block of code to be executed if the condition1 is false and condition2 is false
+}
+```
+
+---
+
+# 2. Language Introduction
+
+switch
+
+```bash
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+```
+
+ loop (for each as example)
+
+```bash
+ String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+for (String i : cars) {
+  System.out.println(i);
+}
+```
 
 ---
 

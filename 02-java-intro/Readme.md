@@ -1,4 +1,4 @@
-# Introduction to Java
+# Language Introduction
 
 In this section you will find a number of simple examples, that will introduce the Java programming language. Goal is to cover the most basic features and help you, to start developing your own software as quickly as possible.
 
