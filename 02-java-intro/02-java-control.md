@@ -129,9 +129,10 @@ a:hover {
 
 ## Motivation
 
-* describe differences between a program and an operating system.  
-* For which use cases would you use Java?  
-* Which programming languages do you know?
+* What are your experiences using other programming languages? Which data types do you know
+* Concerning data types - what's the difference between Java and Javascript?
+* Making calculations with big whole numbers what should you consider closely?
+* Making calculations decimal numbers (e.g. money), what should you be aware of?
 
 ---
 
@@ -175,6 +176,19 @@ String x = "10";
 int y = 20;
 String z = x + y;  // z will be 1020 (a String)
 ```
+
+---
+
+# 2. Language Introduction
+
+## Arrays
+
+* can have one or more dimensions
+
+    `string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};`
+    `int[][] coordinates = {{1, 2}, {2,3}};`
+
+> more information can be find [here](https://www.w3schools.com/java/java_arrays.asp)
 
 ---
 
@@ -240,11 +254,11 @@ https://www.w3schools.com/java/java_operators.asp
 
 # 2. Language Introduction
 
+## Control flow - condition
+
 see https://www.w3schools.com/java/java_conditions.asp
 
-condition
-
-```bash
+```java
 if (condition1) {
   // block of code to be executed if condition1 is true
 } else if (condition2) {
@@ -253,14 +267,13 @@ if (condition1) {
   // block of code to be executed if the condition1 is false and condition2 is false
 }
 ```
-
 ---
 
 # 2. Language Introduction
 
-switch
+## Control flow - switch
 
-```bash
+```java
 switch(expression) {
   case x:
     // code block
@@ -273,10 +286,16 @@ switch(expression) {
 }
 ```
 
- loop (for each as example)
+---
 
-```bash
- String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+# 2. Language Introduction
+
+## Control flow - loop
+
+for each as example
+
+```java
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
 for (String i : cars) {
   System.out.println(i);
 }
@@ -284,217 +303,127 @@ for (String i : cars) {
 
 ---
 
-# 1. Introduction to Java
+# 2. Language Introduction
 
-## Java-Powered Applications
+## Methods, Parameters and structuring your code
 
-Originally developed as language for the world wide web, Java is widely used across various industries due to its platform independence, security, and robustness.
-
-## Applications Running Java
-
-* **Web Applications** – e.g., Twitter, LinkedIn, Netflix  
-* **Mobile Apps** – Android apps (Java is a primary language for Android development)  
-* **Enterprise Software** – e.g., ERP systems, banking software  
-* **Games** – e.g., Minecraft  
-* **Big Data & Cloud Computing** – Hadoop, Apache Spark  
-* **AI & Machine Learning** – TensorFlow, Deeplearning4j 
-* it is common to use Java as backend while using a Javascript-based frontend
+* methods
+  * are code block which only runs when they are called
+  * use parameters to pass data into methods
+  * can have a return value or void
+  * are declared in a class or struct
+* use methods in order to reuse code
 
 ---
+# 2. Language Introduction
 
-# 1. Introduction to Java
+## Methods, Parameters and structuring your code
 
-## Java History
+Example:
 
-* designed by James Gosling at Sun Microsystems, release in May 1995
-* 1998 Java Community Process
-  * members today: Alibaba, Amazon.com, Services, Inc., Arm Ltd, Azul Systems, Bellsoft , BNY Mellon, Eclipse, Ken Foge, Fujitsu, IBM , Intel, Japan JUG, JetBrains, MicroDoc, Microsoft, Oracle, SAP, SouJava 
-* 2006, 2007 Java virtual machine (JVM) as free and open-source software (FOSS), under the terms of the GPL-2.0-only license
-* 2010 Oracle aquired SUN and Java
-* 2017 Jakarta EE goes to Eclipse Foundation
-
----
-
-# 1. Introduction to Java
-
-## Principles
-
-* It must be simple, **object-oriented**, and familiar.
-  * inpired by C++, Smalltalk, Eiffel, ObjectiveC
-* It must be robust and secure.
-  * **automatic garbadge collection**, no pointer arithmetic needed
-* It must be architecture-neutral and portable.
-  * **platform-independent**
-* It must execute with high performance.
-* It must be **interpreted**, threaded, and dynamic.
-  * Java interpretor runs Java bytecode directly,classes are linked as needed
-  * **multiy-threaded and thread-safe**
-* **type-save**
-
-Source: https://www.oracle.com/java/technologies/introduction-to-java.html
-
----
-
-# 1. Introduction to Java
-
-## Java Platform
-
-Different platforms target different classes of device and application domains:
-
-* **Java Card:** A technology that allows small Java-based applications (applets) to be run securely on smart cards and similar small-memory devices.
-* **Java ME (Micro Edition):** Specifies several different sets of libraries (known as profiles) for devices with limited storage, display, and power capacities. It is often used to develop applications for mobile devices, PDAs, TV set-top boxes, and printers.
-* **Java SE (Standard Edition):** For general-purpose use on desktop PCs, servers and similar devices.
-* **Jakarta EE (Enterprise Edition):** Java SE plus various APIs which are useful for multi-tier client–server enterprise applications.
-
----
-
-# 1. Introduction to Java
-
-## JVM, JRE, JDK
-
-* **JVM (Java Virtual Runtime)**: Included in both, JRE and JDK. Loads, verifies, and runs Java bytecode. It is known as the interpreter or the core of the Java programming language because it runs Java programming.
-* **Java Runtime Environment, or JRE**, is a set of software tools responsible for execution of the Java program or application on your system.
-* **Java Development Kit, or JDK**, is a software development kit that is a superset of JRE. JDK contains all the tools that are required to compile, debug, and run a program developed using the Java platform.
-
-Source: https://www.ibm.com/think/topics/jvm-vs-jre-vs-jdk
-
----
-<!-- _class: image -->
-# 1. Introduction to Java
-
-## The Java virtual machine - run everywhere
-
-![width:800px](../imgs/JvmSpec7.png)
-
-By Michelle Ridomi - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=35963523
-
----
-
-# 1. Introduction to Java
-
-## Java Development Kit
-
-**javac** - read Java class and interface definitions and compile them into bytecode and class files
-
-**java** - launch a Java application
-
-**jar** - creates an archive for classes and resources, and can manipulate or restore individual classes or resources from an archive. The jar command is a general-purpose archiving and compression tool, based on the ZIP and ZLIB compression formats.
-
----
-
-# 1. Introduction to Java
-
-## Java Development Kit Example
-
-Root folder: ```hello-world```
-Compile in bytecode:
-
-```bash
-mkdir classes
-javac src/main/java/de/starwit/Quiz.java -d classes
+```java
+class SimpleMathExtension
+{
+    public int divideTwoNumbers(int number1, int number2)
+    {
+        return number1 / number2;
+    }
+}
 ```
 
-Execute Java program:
+Definition:
 
-```bash
-java src/main/java/de/starwit/Quiz.java
-cd classes
-java de.starwit.Quiz
+```java
+class Class_Name
+{
+    <access modifier> <return type> methodName(Parameters)
+    {
+        //method statements
+        return Return_Value;
+    }
+}
 ```
+---
+# 2. Language Introduction
 
-Create and execute archive:
+## Main Method
 
-```bash
-jar --create --file foo.jar --main-class de.starwit.Quiz -C classes .
-java -jar foo.jar
+Entry method which is called after start of the app
+
+```java
+class SimpleMathExtension
+{
+    public static void Main(String[] args)
+    {
+      int result = divideTwoNumbers(9, 3);
+      System.out.println(result);
+    }
+    
+    public int divideTwoNumbers(int number1, int number2)
+    {
+        return number1 / number2;
+    }
+}
 ```
 
 ---
 
-# 1. Introduction to Java
+# 2. Language Introduction
 
-## Programming Languages running on JVM
+## Method Overloading
 
-The JVM was initially designed to support only the language Java. However, over time, ever more languages were adapted or designed to run on the Java platform.
+```java
+/**
+* Methods has the same name but different parameters
+**/
+class MethodOverloadExample
+{
+    public int addNumbers(int number1, int number2)
+    {
+        return number1 + number2;
+    }
 
-* **Java** a statically-typed object-oriented language
-* **Kotlin** a statically-typed language from JetBrains, the developers of IntelliJ IDEA[3] and Google's preferred language for Android
-* **Scala** a statically-typed object-oriented and functional programming language
-* **Groovy** a dynamic programming language (also with static typing) and scripting languag
-* **Clojure** a dynamic, and functional dialect of the Lisp programming language
+    public int addNumbers(int number1, int number2, int number3)
+    {
+        return number1 + number2 + number3;
+    }
 
-Source: https://en.wikipedia.org/wiki/List_of_JVM_languages
-
----
-
-# 1. Introduction to Java
-
-## Git Overview
-
-* in order to work together, you need to handle parallel changes of your team
-* Git is a version control system designed to do this
-* you work with branches e.g. to separate different features from each other
-* important commands:
-  * `git clone https://...` clones a project from a git repository to your lokal file system
-  * `git add .` adds your changes to a stage
-  * `git commit .` commits your changes in your local branch
-  * `git push` pushes your changes to remote branch
-  * `git pull` get the latest changes from your repository
-
----
-<!-- _class: image -->
-# 1. Introduction to Java
-
-## Git Branches and Workflow
-
-![h:500](../imgs/git-branches.png)
+    public double addNumbers(double number1, double number2)
+    {
+        return number1 + number2;
+    }
+}
+```
 
 ---
 
-# 1. Introduction to Java
+# 2. Language Introduction
 
-## Git Pull Requests / Merge Requests
+## Local Scope Variables
 
-* to merge feature branches in the main branch, pull request or merge requests can be created
-* a pull request can be reviewed and approved before merging
-
-## Git Advantages
-
-* you can work in a separated version of code (branch) without disturbing anyone
-* contolled way to do reviews before code is going live
-* building and maintaining more than one release is possible
-* versioned code history
+```java
+public int divideTwoNumbers(int number1, int number2)
+{
+    //local scoped variable - only available in method
+    int returnValue = number1 / number2; 
+    return returnValue;
+}
+```
 
 ---
 
-# 1. Introduction to Java
+# 2. Language Introduction
 
-## IDE (Integrated Development Environment)
+## Klassendefinition
 
-* Visual Studio Code
-* IntelliJ
-* Eclipse
-* NetBeans
-
-## Links / Sources
-
-* [Java Programming Language in Wikipedia](https://en.wikipedia.org/wiki/Java_(programming_language))
-* [Offical tutorial](https://docs.oracle.com/javase/tutorial/)
-* [List of JVM Languages](https://en.wikipedia.org/wiki/List_of_JVM_languages)
-* [JVM, JRE, JDK](https://www.ibm.com/think/topics/jvm-vs-jre-vs-jdk)
+![Klassendefinition](../imgs/OO-concepts-class-def.drawio.svg)
 
 ---
 # 1. Introduction to Java
 
 ## Quiz
 
-* What are the parts of the Java platform?  
-* What is the difference between an interpreter and a compiler? Where is each used in Java?  
-* What files make up a Java project?  
-* What principles is Java based on?  
-* Why is Java-written code easier to transfer to other systems (microprocessors/operating systems)?  
-* When and why should you use git?  
-* What is the difference between debugging and running a java program?  
+TODO 
 
 ---
 <!-- _class: image -->
