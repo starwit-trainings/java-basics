@@ -8,7 +8,7 @@
   <artifactId>data</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>control</name>
+  <name>data</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

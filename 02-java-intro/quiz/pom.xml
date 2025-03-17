@@ -30,6 +30,7 @@
               <goal>single</goal>
             </goals>
             <configuration>
+              <finalName>quiz</finalName>
               <archive>
               <manifest>
                 <mainClass>
