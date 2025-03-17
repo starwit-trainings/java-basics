@@ -332,5 +332,7 @@ Quelle: [Liste der JVM-Sprachen](https://en.wikipedia.org/wiki/List_of_JVM_langu
 
 <!-- _class: image -->
 # 1. Setup & Werkzeuge
+
 ## weitere Aufgaben befinden sich in der [readme](Readme.md)
+
 ![width:300px](../imgs/duke.png)

@@ -390,18 +390,17 @@ public int divideTwoNumbers(int number1, int number2) {
 
 ## Quiz
 
-* Nenne jeweils einen Datentyp für: ganze Zahlen, Dezimalzahlen, Text, Zeichen.
-* Nenne arithmetische Operatoren. Welche Arten von Operatoren gibt es noch?
+* Nennen Sie jeweils einen Datentyp für: ganze Zahlen, Dezimalzahlen, Text, Zeichen.
+* Nennen Sie arithmetische Operatoren. Welche Arten von Operatoren gibt es noch?
 * Wie heißt die Methode, die beim Starten eines Projektes ausgeführt wird?
 * Was sind lokale Variablen?
 * Aus welchen drei Elementen besteht die Signatur einer Methode?
 * Wie kann eine Klasse verwendet werden? Was muss man dafür tun?
 
 ---
+<!-- _class: image -->
+# 2. Einführung in die Sprache
 
-Weitere Aufgaben findest du in der [README](Readme.md).
+## weitere Aufgaben befinden sich in der [readme](Readme.md)
 
-![Duke](../imgs/duke.png)
-```
-
-This is the raw source code for the README file. You can copy and paste it into a `README.md` file and use it as needed. Let me know if you need further changes or adjustments!
+![width:300px](../imgs/duke.png)
