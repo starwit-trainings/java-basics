@@ -101,8 +101,8 @@ a:hover {
 * Java-Anwendungen
 * Java-Geschichte
 * Prinzipien
-* Java-Plattform
-* JVM, JRE, JDK
+* Java-Plattform (JDK, JRE, JVM)
+* Git
 * IDEs & Links
 * Quiz
 
