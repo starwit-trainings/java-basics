@@ -217,7 +217,7 @@ By Michelle Ridomi - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/ind
 
 ## Beispiel für das Java Development Kit
 
-Verzeichnis: `hello-world`  
+Verzeichnis: `quiz`  
 
 Java-Code in Bytecode kompilieren:
 

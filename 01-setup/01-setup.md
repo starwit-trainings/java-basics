@@ -225,7 +225,7 @@ By Michelle Ridomi - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/ind
 
 ## Java Development Kit Example
 
-Root folder: ```hello-world```
+Root folder: ```quiz```
 Compile in bytecode:
 
 ```bash

@@ -15,7 +15,7 @@ public class DataApp {
         dataTypes();
         moreDataTypes();
         calculations();
-        multipleThings();
+        handleMultipleVariables();
     }
 
     private static void dataTypes() {
@@ -60,7 +60,7 @@ public class DataApp {
         log.info(result);
     }
 
-    private static void multipleThings() {
+    private static void handleMultipleVariables() {
         log.info("handling multiple variables");
 
         // defining an array
