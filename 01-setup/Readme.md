@@ -33,6 +33,7 @@ Try to run the Quiz.java program via your IDE. Set a breakpoint and start Quiz.j
 As already mentioned in the slides, JDK or JRE comes with tools to execute java programs. Run your Quiz program in different ways as described:
 
 Root folder: ```quiz```
+
 Compile in bytecode:
 
 ```bash
