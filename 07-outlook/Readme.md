@@ -34,6 +34,8 @@ APIs should never be accessed without authentication. In this example we want ac
 
 #### Tasks
 * run app
+* Build function, that calls API every 5 seconds
+* Enhance function, that checks if token is still valid and if not, request a new one.
 
 
 ### Accessing APIs with Tokens - Spring Boot
