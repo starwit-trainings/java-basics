@@ -1,9 +1,9 @@
-# Setup Examples
+# 01 - Hello World
 
 In this section you will find two simple hello world applications (with and without Maven)\
 that shall help you setting up your development environment.
 
-## Examples
+## Code Examples
 
 ### Plain Hello World
 No software development lecture can start without a hello word example.\

@@ -1,9 +1,9 @@
-# Setup-Beispiele
+# 01 - Hello World
 
 In diesem Abschnitt finden Sie zwei einfache Hello-World-Anwendungen (mit und ohne Maven),\
 die Ihnen beim Einrichten Ihrer Entwicklungsumgebung helfen sollen.
 
-## Beispiele
+## Code-Beispiele
 
 ### Einfaches Hello World
 Keine Softwareentwicklungs-Vorlesung kann ohne ein Hello-World-Beispiel beginnen.\
