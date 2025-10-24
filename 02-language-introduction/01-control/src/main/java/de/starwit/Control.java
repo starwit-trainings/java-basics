@@ -10,7 +10,7 @@ public class Control {
     static Logger log = LogManager.getLogger(Control.class.getName());
 
     public static void main(String[] args) throws Exception {
-        log.info("programm started");
+        log.info("program started");
 
         // Make a decision using if
         int i = 10;

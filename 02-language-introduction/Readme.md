@@ -26,11 +26,11 @@ This example demonstrate some of Java's features to make decisions and control y
     * [while](https://www.w3schools.com/java/java_while_loop.asp) -> Run a loop for as long a value/expression is true (this one can lead to infinite loops, be careful)
 
 #### Tasks
-* Run code and observe its output
+* Review the code, run it and observe its output
 * Modify the if/else decision to trigger else branch
 * Implement a countdown from 10 to 0 using a for loop
 * Implement a loop that prints all even numbers between 20 to 30 (inclusive) using a while loop
-* Play with the new switch expression syntax (https://docs.oracle.com/en/java/javase/21/language/switch-expressions-and-statements.html)
+* Bonus: Play with the new switch expression syntax (https://docs.oracle.com/en/java/javase/21/language/switch-expressions-and-statements.html)
 
 ### 02 - Methods and Parameters
 In order to break down software into manageable pieces methods (or functions) are a key concept and handing over parameters is essential to make them reusable. This example project shows you how to do this. Also we'll finally write some simple tests to verify our code works as expected. Turns out, methods are also essential to write testable code.
@@ -38,18 +38,21 @@ In order to break down software into manageable pieces methods (or functions) ar
 #### Concepts covered
 * [Java methods](https://www.w3schools.com/java/java_methods.asp) Java's core concept to break code into manageable blocks
 * [Parameters in Methods](https://www.w3schools.com/java/java_methods_param.asp) How to deal with parameters for methods.
+* [Overloading Methods](https://www.w3schools.com/java/java_methods_overloading.asp) On the magic, that multiple methods can have the same name and yet do something different.
 * [JUnit Testing](https://www.geeksforgeeks.org/advance-java/introduction-of-junit/) Writing simple tests to verify your code works as expected.
 
 #### Tasks
-* Run app and observe output
+* Review the code, run it and observe its output
 * Look at the existing methods and their signatures and understand how parameters are handed over and used
 * Extract the logic to read a number from user input into a separate method readInput() and returns the read integer
-* Turn this application into a simple calculator that adds two numbers from user input and prints the result
+* Turn this application into a simple calculator that adds two numbers from (separate) user inputs and prints the result
 * Have a look at the existing test [testGetFive()](02-methods/src/test/java/de/starwit/MethodsTest.java#L14) and understand how it works, then change the return value of the tested function [getFive()](02-methods/src/main/java/de/starwit/Methods.java#L62) and run `mvn test`
 * Write some new tests for methods you have created (at least for the existing add() method)
+* Bonus: Make the calculator handle subtraction, multiplication and division as well.
+* Bonus: Make the calculator parse a simple expression like "5 + 3" from a single user input line (like a real calculator would).
 
 ### 03 - Data Types and Variables
-Storing data in variables is essential for any programming language. We have already done this with numbers (i.e. integers) in the preceding examples. There are however many more interesting data types to be stored. This example provides help to understand Java's build-in types and how you use them. [Here](https://www.w3schools.com/java/java_data_types.asp) is an overview of some primitive types.
+Storing data in variables is essential for any programming language. We have already done this with numbers (i.e. integers) in the preceding examples. There are, however, many more interesting data types to be stored. This example provides help to understand Java's build-in types and how to use them. [Here](https://www.w3schools.com/java/java_data_types.asp) is an overview of some primitive types.
 
 #### Concepts covered
 * [Java's (primitive) datatypes](https://www.w3schools.com/java/java_data_types.asp)
@@ -61,28 +64,26 @@ Storing data in variables is essential for any programming language. We have alr
 __Please note__ As Java is an object oriented programming language, it's type system can be extended and it is in fact the much more interesting part of the language :)
 
 #### Tasks
-* Run app
-* Modify dataTypes/moreDataTypes method, such that StringBuffer output separates values
-* Write a method, that in/decreases all integer types to its respective maximum/minimum
-* Enhance calculating method by all [arithmetic operators](https://www.w3schools.com/java/java_operators.asp)
-* Enhance array method with an array that holds random integers, after that every number in the array shall be increased by 1, except if the value is greater or equal 1000 [Hint for random numbers](https://www.geeksforgeeks.org/generating-random-numbers-in-java/)
-* Write a method, that collects more than one input, checks if input is an integer and put all integers into an array. After completion - how do you know? - array shall be printed (see method multiple things)
-* Can you implement output from last task, using a while loop?
+* Review the code, run it and observe its output
+* Read a sentence as string (should contain multiple words) from user input and print every word on a separate line
+* Have a look at the arrays() method, understand how arrays are defined, filled and accessed
+    * Add a for loop that prints the array in reverse order
+    * Print a random array element (hint: use Math.random() to generate a random index)
+    * Extract the array initialization part into a separate method initializeStringArray() and make the length variable
+* Read a number of integers from user input (e.g. "2 3 8 2 4 1") and print the following values: minimum, maximum, sum, average
+* Bonus: Look at the automatic type conversion rules. Can you imagine any problems that may arise? Try to come up with a demonstration.
 
-### Parameters and Methods
-In order to break down software into manageable pieces, handing over parameters is essential. This example project shows you, how to do this on program start and with methods.
-
-#### Concepts covered
-* [Java methods](https://www.w3schools.com/java/java_methods.asp) Java's core concept to break code into manageable blocks
-* [Parameters in Methods](https://www.w3schools.com/java/java_methods_param.asp) How to deal with parameters for methods.
-* [Overloading Methods](https://www.w3schools.com/java/java_methods_overloading.asp) On the magic, that multiple methods can have the same name and yet do something different.
+### 04 - Notes App
+In order to finally do something useful, we will now build a primitive notes app, using all the knowledge we have so far =)
 
 #### Tasks
-* Run app with various parameters
-* output number of handed over parameters
-* Write a method, that checks for every parameter if it is a string or integer
-* Put all integer params in an array, write a method that takes this array as input and results sum of all elements
-* write a method that takes first parameter and switch cases over values calling a method for each case. Choose how many cases you want to distinguish
-* Look at method _returnParameterExample_, create two other methods with the same name. On shall take _double_ and the other _int_ as input parameters. Both shall return the sum of it's two parameters
-* move all static methods to FirstClass definition and call them from there
-* __Bonus challenge__: If first parameter is an integer, this shall be taken as an input for a method, that asks for as many user inputs as the integer's value. All input values shall be stored in an array. Inform user on how many items are still necessary to input.
+* The program should behave the following way
+    * On start the user is prompted to input a number, which will determine the capacity of the notebook (e.g. 10 -> can hold 10 string entries)
+    * Then the user can start using the notes app by inputting commands one by one (i.e. COMMAND -> _ENTER_ -> OUTPUT -> COMMAND -> _ENTER_ -> OUTPUT etc.)
+* Available commands
+    set N STRING (sets the string at position N to STRING)
+    get N (prints the string at position N)
+    print (prints all entries, line by line, with indizes)
+* This starts being a somewhat complex application, so we start writing tests to make sure it works (write at least one test for a command)
+* Hint: Have a look at [String::split()](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#split-java.lang.String-)
+* Bonus: Remove the prompt for capacity, add the commands "add STRING" and "delete N", therefore making the notebook of variable / dynamic size (do not use collections!). It can now magically store as many entries as you like! (until your computer runs out of memory of course)
