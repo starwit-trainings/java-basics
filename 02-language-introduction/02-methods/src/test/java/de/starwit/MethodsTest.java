@@ -12,7 +12,7 @@ public class MethodsTest {
 
     @Test
     public void testGetFive() {
-        int result = Control.getFive();
+        int result = Methods.getFive();
         assertTrue(result == 5);
     }
 }

@@ -14,7 +14,7 @@ This example demonstrate some of Java's features to make decisions and control y
     # From now on you can also just run this to execute the code in one step without building a .jar first (this requires some setup in your pom.xml which I have done for you)
     mvn compile exec:java
 
-    # Alternatively you can use your IDE to run the main class de.starwit.Control
+    # Alternatively you can use your IDE to run the main class (e.g. de.starwit.Control)
 ```
 
 #### Concepts covered

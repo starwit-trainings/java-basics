@@ -12,7 +12,6 @@ public class Data {
         log.info("program started");
         dataTypes();
         moreDataTypes();
-        calculations();
         arrays();
     }
 
@@ -32,16 +31,6 @@ public class Data {
         byte evenSmallerNumber = 127;
 
         char singleCharacter = 'a';
-    }
-
-    public static void calculations() {
-        log.info("Calculating with Java");
-        int result = globalNumber + globalNumber;
-        log.info(result);
-        result = globalNumber + 100;
-        log.info(result);
-        result = globalNumber - 100;
-        log.info(result);
     }
 
     public static void strings() {
