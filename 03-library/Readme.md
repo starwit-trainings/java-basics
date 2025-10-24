@@ -9,9 +9,11 @@ In the Java eco-system literally millions of libraries are available. To get an 
 ## Example list
 
 ### Apache Commons Example
+
 This example introduces the Apache commons collection of libraries and shows, how to use it. Check out this vast lib collection here https://commons.apache.org/
 
 To run example, execute the following commands:
+
 ```bash
     cd commons
     mvn clean package
@@ -19,13 +21,16 @@ To run example, execute the following commands:
 ```
 
 #### Concepts covered
+
 This example has examples for the following language features:
+
 * [Java packages](https://www.w3schools.com/java/java_packages.asp) How to manage larger blocks of code and how to address objects in libraries
 * How to work with libraries, that are downloaded via dependency management
 * [Javadoc](https://en.wikipedia.org/wiki/Javadoc) how to use Java's documentation system
 * [Working with Strings](https://www.w3schools.com/java/java_strings.asp) More tricks to work with strings in Java
 
 #### Tasks
+
 * Browse JavaDoc: https://commons.apache.org/proper/commons-text/apidocs/index.html
 * Play with the two strings and try various combinations
 * Rewrite program, to get both strings as a CLI parameter
@@ -33,10 +38,12 @@ This example has examples for the following language features:
 * Use string parameters and check every entry if name is equal to one of the params
 
 ### Maven Introduction
+
 Maven is a tool to manage dependencies and to define build/release processes. It is a proven and quite powerful tool. No software project should be build without a tool like Maven. This example will introduce you to some (basic) features of Maven.
 
 So far you have "just" used Maven. Now it is time, to dive into some details.
 To run example, execute the following commands:
+
 ```bash
     cd maven-example
     mvn package
@@ -44,13 +51,16 @@ To run example, execute the following commands:
 ```
 
 #### Concepts covered
+
 Packaging software is about managing complexity and it covers the following concepts:
+
 * [Dependency Management](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)
 * [Build Management](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
 * [Continuously building software](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
 * [Log4J](https://howtodoinjava.com/log4j2/useful-conversion-pattern-examples/) - output of your application that is meant, to understand it's state, should be done with a logging framework.
 
 #### Tasks
+
 * Run example with phases: compile, test, package, install
 * Observe results in target folder, check also content HOME_DIR/.m2
 * Make sure you understand executable jar process - change name of resulting filename
@@ -59,21 +69,24 @@ Packaging software is about managing complexity and it covers the following conc
 * One thing Maven is great, is to track software bill of materials - add [CycloneDX plugin](https://github.com/CycloneDX/cyclonedx-maven-plugin) and execute it
 
 ### Apache Commons CLI
+
 This example shall be build by you. As you just learned how to add a library to your software, create a new folder called apachecli and copy content of last example. Rename all necessary fields in pom.xml and add [Apache CLI](https://commons.apache.org/proper/commons-cli/introduction.html) as a dependency. This example shall except the following parameters:
+
 * -f that holds CSV file location from last example
 * -t that prints time and date
 * -h to print info and parameter help
 
 #### Tasks
+
 * create a new project, you can let Maven help you:
+
     ```java
         mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes 
         -DarchetypeArtifactId=maven-archetype-quickstart 
         -DarchetypeVersion=1.5 
         -DjavaCompilerVersion=21
     ```
+
 * Add commons CLI as a dependency
 * Implement parameter handover
 * __Bonus challenge:__ Take CSV reading code from first example in this chapter and let it run, if -f parameter is set.
-
- 

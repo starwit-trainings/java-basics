@@ -17,10 +17,6 @@ public class ParamsApp {
         simpleParamExample("test");
         complexParamExample(args);
         log.info(returnParameterExample("hello", "world"));
-
-        // let's instanciate our first object
-        FirstClass fc = new FirstClass();
-        fc.anObjectMethod();
     }
 
     private static void simpleParamExample(String s) {
@@ -35,13 +31,5 @@ public class ParamsApp {
 
     private static String returnParameterExample(String s1, String s2) {
         return s1 + s2;
-    }
-}
-
-class FirstClass {
-    Logger log = LogManager.getLogger(FirstClass.class.getName());
-
-    public void anObjectMethod() {
-        log.info("Object method called");
     }
 }

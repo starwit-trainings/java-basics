@@ -11,14 +11,14 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         log.info("programm started");
-        makeDecision();
+        condition();
         forloops();
         whileloops();
-        switching(2);
         readingInput();
+        switching(2);
     }
 
-    private static void makeDecision() {
+    private static void condition() {
         int i = 10;
         if(i < 10) {
             log.info("smaller");
