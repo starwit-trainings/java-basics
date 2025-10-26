@@ -1,14 +1,16 @@
 package de.starwit;
 
+import java.util.Arrays;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import org.apache.commons.text.diff.EditScript;
 import org.apache.commons.text.diff.StringsComparator;
 import org.apache.commons.text.similarity.LongestCommonSubsequence;
 import org.apache.commons.text.similarity.LongestCommonSubsequenceDistance;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
-public class CommonsApp {
-    static Logger log = LogManager.getLogger(CommonsApp.class.getName());
+public class Commons {
+    static Logger log = LogManager.getLogger(Commons.class.getName());
 
     public static void main(String[] args) throws Exception {
         log.info("Commons app started");
@@ -26,12 +28,5 @@ public class CommonsApp {
         EditScript<Character> script = cmp.getScript();
         int mod = script.getModifications();        
         log.info("Difference " + mod);
-
-        runCSVExamples();
-    }
-
-    private static void runCSVExamples() {
-        CSVExamples csvEx = new CSVExamples("data/bundesliga_clubs.csv");
-        csvEx.outputCSV();
     }
 }

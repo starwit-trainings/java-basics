@@ -5,34 +5,38 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
+import org.apache.commons.text.diff.EditScript;
+import org.apache.commons.text.diff.StringsComparator;
+import org.apache.commons.text.similarity.LongestCommonSubsequence;
+import org.apache.commons.text.similarity.LongestCommonSubsequenceDistance;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class CSVExamples {
+public class Commons {
+    static Logger log = LogManager.getLogger(Commons.class.getName());
 
-    static Logger log = LogManager.getLogger(CSVExamples.class.getName());
-    
-    private String fileLocation = "";
+    public static void main(String[] args) throws Exception {
+        log.info("Commons app started");
 
-    public CSVExamples(String fileLocation) {
-        this.fileLocation = fileLocation;
+        printCSV("data/bundesliga_clubs.csv");
     }
 
-    public void outputCSV() {
+    public static void printCSV(String fileLocation) {
         Reader in;
         try {
             in = new FileReader(fileLocation, StandardCharsets.UTF_8);
 
             CSVFormat csvFormat = CSVFormat.DEFAULT.builder()
-                .setHeader("id","name","leauge")
+                .setHeader("id","name","league")
                 .setDelimiter(";")
                 .setSkipHeaderRecord(true)
-                .build();                
+                .get();                
             
-            Iterable<CSVRecord> records = csvFormat.parse(in);;
+            Iterable<CSVRecord> records = csvFormat.parse(in);
             for (CSVRecord record : records) {
                 String clubName = record.get(1);
                 int clubLeague = Integer.parseInt(record.get(2));
@@ -43,9 +47,5 @@ public class CSVExamples {
         } catch (IOException e) {
             log.error("Can't access csv file " + e.getMessage());
         }       
-    }
-
-    public String getFileLocation() {
-        return fileLocation;
     }
 }
