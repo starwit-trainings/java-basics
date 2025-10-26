@@ -23,8 +23,6 @@ Packaging software is about managing complexity and it covers the following conc
 * Run example with phases: compile, test, package, install (i.e. `mvn PHASE1`)
 * Observe the console output and the results in target folder, also check content of HOME_DIR/.m2
 * Check Maven's configuration in the `pom.xml`. Which plugins are configured and to what purpose?
-* Add [log4j](https://central.sonatype.com/artifact/log4j/log4j) to your dependencies and change all output to log messages. See [here](commons/src/main/java/de/starwit/CommonsApp.java) for an example.
-* Add a second Java source file containing a class with one method, that prints current [date and time](https://www.w3schools.com/java/java_date.asp). Call this method from main method.
 * One thing Maven is great at is to track software bill of materials - add [CycloneDX plugin](https://github.com/CycloneDX/cyclonedx-maven-plugin) and execute it
 
 ### 02 - Apache Commons Text
