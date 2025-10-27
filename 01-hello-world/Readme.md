@@ -40,4 +40,4 @@ That is the reason why from now on we will use Maven.
  * Change output to three different messages of your choosing
  * Run `mvn test` and observe output
  * Look into [logging config](02-hello-world-mvn/src/main/resources/log4j2.xml) and change name of log file
- * You'll notice that the log file is empty after the program has run. Try and change that.
+ * Bonus: You'll notice that the log file is empty after the program has run. Try and change that.
