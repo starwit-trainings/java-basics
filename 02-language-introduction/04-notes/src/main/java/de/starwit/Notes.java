@@ -8,6 +8,8 @@ import org.apache.logging.log4j.Logger;
 public class Notes {
     static Logger log = LogManager.getLogger(Notes.class.getName());
 
+    public static String[] notebook;
+
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
 
@@ -16,7 +18,7 @@ public class Notes {
         log.info("Input notebook size:");
         int size = scanner.nextInt();
 
-        String[] notebook = new String[size];
+        notebook = new String[size];
         log.info("Notebook ready (size=" + size + ")");
 
         boolean exit = false;
@@ -32,11 +34,11 @@ public class Notes {
             switch(command[0]) {
                 case "set" -> {
                     int pageIndex = Integer.parseInt(command[1]);
-                    setPage(notebook, command[2], pageIndex);
+                    setPage(command[2], pageIndex);
                 }
                 case "get" -> {
                     int pageIndex = Integer.parseInt(command[1]);
-                    log.info(getPage(notebook, pageIndex));
+                    log.info(getPage(pageIndex));
                 }
                 case "print" -> {
                     for (int i = 0; i < notebook.length; i++) {
@@ -59,11 +61,11 @@ public class Notes {
         return line.split(" ", 3);
     }
 
-    public static void setPage(String[] notebook, String page, int pageIndex) {
+    public static void setPage(String page, int pageIndex) {
         notebook[pageIndex] = page;
     }
 
-    public static String getPage(String[] notebook, int pageIndex) {
+    public static String getPage(int pageIndex) {
         return notebook[pageIndex];
     }
 
