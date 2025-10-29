@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>de.starwit</groupId>
-  <artifactId>notes</artifactId>
+  <artifactId>notes-ood</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>notes</name>
+  <name>notes-ood</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -49,7 +49,7 @@
               <goal>single</goal>
             </goals>
             <configuration>
-              <finalName>notes</finalName>
+              <finalName>notes-ood</finalName>
               <archive>
               <manifest>
                 <mainClass>

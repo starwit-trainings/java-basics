@@ -1,5 +1,6 @@
 package de.starwit;
 
+import java.util.List;
 import java.util.Scanner;
 
 import org.apache.logging.log4j.LogManager;
@@ -8,18 +9,15 @@ import org.apache.logging.log4j.Logger;
 public class Notes {
     static Logger log = LogManager.getLogger(Notes.class.getName());
 
-    public static String[] notebook;
+    public static Notebook notebook;
 
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
 
         log.info("Notes app started");
 
-        log.info("Input notebook size:");
-        int size = scanner.nextInt();
-
-        notebook = new String[size];
-        log.info("Notebook ready (size=" + size + ")");
+        notebook = new Notebook();
+        log.info("Notebook ready.");
 
         boolean exit = false;
 
@@ -32,17 +30,23 @@ public class Notes {
             String[] command = parseCommand(inputLine);
 
             switch(command[0]) {
-                case "set" -> {
+                case "add" -> {
+                    Command cmd = new AddCommand(command[1] + " " + command[2]);
+                    cmd.executeOn(notebook);
+                }
+                case "delete" -> {
                     int pageIndex = Integer.parseInt(command[1]);
-                    setPage(command[2], pageIndex);
+                    Command cmd = new DeleteCommand(pageIndex);
+                    cmd.executeOn(notebook);
                 }
                 case "get" -> {
                     int pageIndex = Integer.parseInt(command[1]);
-                    log.info(getPage(pageIndex));
+                    log.info(notebook.getPage(pageIndex));
                 }
                 case "print" -> {
-                    for (int i = 0; i < notebook.length; i++) {
-                        log.info(i + ": " + notebook[i]);
+                    List<Page> pages = notebook.getAllPages();
+                    for (int i = 0; i < pages.size(); i++) {
+                        log.info(i + ": " + pages.get(i));
                     }
                 }
                 case "exit" -> {
@@ -59,14 +63,6 @@ public class Notes {
 
     public static String[] parseCommand(String line) {
         return line.split(" ", 3);
-    }
-
-    public static void setPage(String page, int pageIndex) {
-        notebook[pageIndex] = page;
-    }
-
-    public static String getPage(int pageIndex) {
-        return notebook[pageIndex];
     }
 
 }
