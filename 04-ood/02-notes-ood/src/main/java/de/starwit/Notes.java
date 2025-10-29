@@ -1,10 +1,17 @@
 package de.starwit;
 
-import java.util.List;
 import java.util.Scanner;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import de.starwit.commands.AddCommand;
+import de.starwit.commands.Command;
+import de.starwit.commands.DeleteCommand;
+import de.starwit.commands.ExitCommand;
+import de.starwit.commands.GetCommand;
+import de.starwit.commands.PrintCommand;
+import de.starwit.commands.SetCommand;
 
 public class Notes {
     static Logger log = LogManager.getLogger(Notes.class.getName());
@@ -19,50 +26,44 @@ public class Notes {
         notebook = new Notebook();
         log.info("Notebook ready.");
 
-        boolean exit = false;
-
-        while (!exit) {
+        while (true) {
             String inputLine = scanner.nextLine();
             if (inputLine.length() == 0) {
                 continue;
             }
 
-            String[] command = parseCommand(inputLine);
+            Command command = parseCommand(inputLine);            
+            command.executeOn(notebook);
 
-            switch(command[0]) {
-                case "add" -> {
-                    Command cmd = new AddCommand(command[1] + " " + command[2]);
-                    cmd.executeOn(notebook);
-                }
-                case "delete" -> {
-                    int pageIndex = Integer.parseInt(command[1]);
-                    Command cmd = new DeleteCommand(pageIndex);
-                    cmd.executeOn(notebook);
-                }
-                case "get" -> {
-                    int pageIndex = Integer.parseInt(command[1]);
-                    log.info(notebook.getPage(pageIndex));
-                }
-                case "print" -> {
-                    List<Page> pages = notebook.getAllPages();
-                    for (int i = 0; i < pages.size(); i++) {
-                        log.info(i + ": " + pages.get(i));
-                    }
-                }
-                case "exit" -> {
-                    exit = true;
-                }
-                default -> {
-                    log.warn("Unknown command");
-                }
+            if (command instanceof ExitCommand) {
+                break;
             }
         }
 
         scanner.close();
     }
 
-    public static String[] parseCommand(String line) {
-        return line.split(" ", 3);
+    public static Command parseCommand(String line) {
+        String[] commandParts = line.split(" ", 2);
+        String command = commandParts[0];
+        String args = "";
+        if (commandParts.length == 2) {
+            args = commandParts[1];
+        }
+
+        Command parsedCommand = switch(command) {
+            case "add" -> new AddCommand(args);
+            case "delete" -> new DeleteCommand(args);
+            case "get" -> new GetCommand(args);
+            case "set" -> new SetCommand(args);
+            case "print" -> new PrintCommand();
+            case "exit" -> new ExitCommand();
+            default -> {
+                throw new IllegalArgumentException();
+            }
+        };
+
+        return parsedCommand;
     }
 
 }

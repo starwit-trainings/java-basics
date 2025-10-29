@@ -1,10 +1,12 @@
-package de.starwit;
+package de.starwit.commands;
+
+import de.starwit.Notebook;
 
 public class AddCommand implements Command {
     private String text;
 
-    public AddCommand(String text) {
-        this.text = text;
+    public AddCommand(String args) {
+        this.text = args;
     }
 
     @Override
